@@ -1,0 +1,235 @@
+.section-three--dis {
+    display:none;
+}
+
+.footer-stick-to-bottom--wrapper {
+    min-height: calc(100vh - 60px);
+}
+
+.section-three--background {
+    background-image: linear-gradient(to right,rgba(170, 155, 57, 0.8), rgba(170, 155, 57, 0.8)), url('../images/background-party.png');
+}
+
+.section-three--specifics {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.section-three--background {
+    h1, h2, h3 {
+    text-align: center;
+    }
+    h1, h2 {
+        margin-bottom: 0;
+        margin-top: 5px;
+    }
+    h1 {
+        @include font-size-value(60);
+    }
+    h2 {
+        @include font-size-value(25);
+    }
+}
+
+.section-three--socials {
+    display: flex;
+    justify-content: flex-end;
+     @include font-size-value(18);
+    a {
+        margin-top: 20px;
+        transition: 0.3s;
+    &:hover {
+        color: $primary-green;
+        }
+    }
+}
+
+h4 {
+    @include font-size-value(30);
+}
+
+.section-three--boxes-for-results {
+    min-height: 250px;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.section-three--boxes-for-results-left {
+    max-width: 860px;
+    margin-right: 6%;
+}
+
+.lcbo-result {
+    img {
+        height: 130px;
+        text-align: center;
+        justify-content: center;
+        margin: 3px;
+    }
+    h4 {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+}
+
+.lcbo-photo--background {
+    background: $primary-white;
+    border-radius: 50%;
+    height: 145px;
+    max-width: 150px;
+    overflow: hidden;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.nyt-result {
+    padding-left: 20px;
+    padding-right: 20px;
+    h4 {
+        margin-bottom: 10px;
+    }
+    .final-results--paragraphs {
+        @include font-size-value(23);
+        font-weight: 600;
+        margin-top: 35px;
+        line-height: 30px;
+    }
+}
+
+.nytbyline {
+    @include font-size-value(15);
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+ .final-results--paragraphs {
+        @include font-size-value(20);
+        font-family: $paragraph-text;
+        margin-top: 0;
+}
+
+.results--background, .lcbo-result {
+    a, h4{
+     transition: 0.3s;   
+    }
+    a:hover {
+        color: $primary-green;
+    }
+    h4:hover {
+        color: $primary-green;
+    }
+}
+
+.section-three--bottom, .section-three--buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.another-please--button, .section-three--anchor{
+    border: none;
+    background: $primary-green;
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: 10px;
+      &:hover {
+        animation-duration: 0.4s; 
+        animation-name: swing; 
+        color: $primary-purple;
+      }
+        &:active {
+            box-shadow: 1px 1px 5px 0 #000000;
+            top: 4px;
+            left: 4px;
+        }   
+}
+
+.another-please--button {
+    margin-right: 10px;
+}
+
+.ending-header h3 {
+    @include font-size-value(30);
+    margin-bottom: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    p {
+        display: inline-block;
+    }
+    img {
+        position: relative;
+        top: 5px;
+    }
+}
+
+// media queries
+
+@media (max-width: 780px) {
+    .section-three--background {
+        h1 {
+            @include font-size-value(50);
+        }
+        h2 {
+             @include font-size-value(20);
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .section-three--background {
+        h1 {
+            @include font-size-value(50);
+        }
+        h2 {
+             @include font-size-value(20);
+        }
+    }
+    .section-three--socials {
+        justify-content: center;
+    }
+    .section-three--specifics {
+        flex-direction: column;
+    }
+    .section-three--boxes-for-results-left, .section-three--boxes-for-results {
+        margin:0;
+    } 
+    .wrapper--footer-nav {
+        text-align: center;
+    }
+    .nyt-result {
+        min-height: 150px;
+    }
+    .nyt-result, .lcbo-result {
+        margin-top: 0;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 540px) {
+    .section-three--background {
+        h3 {
+            @include font-size-value(20);
+        }
+    }
+    .another-please--button, .section-three--anchor {
+        width: 50%;
+    }   
+}
+
+@media (max-width: 540px) {
+    .section-three--anchor {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .section-three--anchor {
+        padding-top: 20px;
+    }
+}

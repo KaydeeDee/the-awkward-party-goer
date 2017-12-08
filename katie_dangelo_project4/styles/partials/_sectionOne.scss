@@ -1,0 +1,131 @@
+.section-one--background {
+    background-image: linear-gradient(to right,rgba(43, 128, 62, 0.8), rgba(43, 128, 62, 0.8)), url('../images/background-party.png');
+}   
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    @include font-size-value(18);
+}
+
+nav a {
+    margin-top: 35px;
+    transition: 0.3s;
+    &:hover {
+        color: $primary-purple;
+    }
+}
+
+.fa-facebook {
+    margin-right: 10px;
+}
+
+.social-margin--right {
+    margin-right: 8px;
+}
+
+.section-one--specifics {
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+h1 {
+    @include font-size-value(70);
+    margin-bottom: 0;
+    font-family: $header-text;
+    margin-top: 10px;;
+}
+
+h2 {
+    @include font-size-value(30); 
+    margin-top: 0;
+    font-family: $paragraph-text;
+}
+
+.section-one--main-wording {
+    @include font-size-value(25);
+    border-radius: 5px;
+    padding: 20px;
+    color: $primary-color; 
+    margin-top: 40px;
+    p {
+        margin: 0;
+        font-weight: 500;
+    }
+}
+
+.section-one--main-wording .section-one--middle-p {
+    margin-top: 20px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.section-one--middle-p {
+    margin-bottom: 20px;
+
+}
+
+.section-one--button {
+    border: 1px solid $primary-purple;
+    background: $primary-purple;
+    margin-top: 20px;
+    margin-bottom: 98px;
+    &:hover {
+        color: $primary-yellow;
+    }
+    &:active {
+    box-shadow: 1px 1px 5px 0 #000000;
+    top: 4px;
+    left: 4px;
+    }
+}
+
+.stick-to-bottom--anchor {
+    display: flex;
+    flex-direction: row;
+    display: block;
+}
+
+.made-by-katie {
+    @include font-size-value(15); 
+    color: $primary-color;
+    font-family: $paragraph-text;
+    font-weight: 600;
+    transition: 1s;
+    &:hover {
+        @include font-size-value(18);
+    }
+}
+
+// media queries
+
+@media (max-width: 1130px) {
+    .stick-to-bottom--anchor {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .section-one--button {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 830px) {
+    .section-one--specifics {
+    h1 {
+        @include font-size-value(55);
+    }
+    h2 {
+         @include font-size-value(30);
+    }
+     p {
+        @include font-size-value(23);
+    }
+ }
+}
+
+@media (max-width: 400px) {
+    .section-one--specifics, .section-two--specifics, .footer-stick-to-bottom--wrapper {
+        max-width: 370px;
+        margin: 0 auto;
+    }
+}

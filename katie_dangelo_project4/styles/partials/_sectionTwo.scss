@@ -1,0 +1,81 @@
+.section-two--dis {
+    display:none;
+}
+
+.section-two--background {
+    background-image: linear-gradient(to right,rgba(65, 48, 117, 0.8), rgba(65, 48, 117, 0.8)), url('../images/background-party.png');
+}
+
+
+// forms
+.section-two--specifics {
+    input, label {
+        color: $primary-color;
+        @include font-size-value(20);
+        font-family: $paragraph-text;
+        background: $primary-white;
+        font-weight: 600;
+        border: none;
+        padding: 15px;
+        margin: 10px 5px;
+        display: inline-block;
+        &:hover {
+            background: $primary-yellow;
+        }
+        &:active {
+            box-shadow: 1px 1px 5px 0 #000000;
+            top: 4px;
+            left: 4px;
+        }
+    }
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.selected {
+  background: $primary-yellow;
+}
+
+.section-two--specifics input[type="radio"]:checked + label {
+  background: $primary-yellow;
+}
+
+h3 {
+    @include font-size-value(45);
+    font-family: $header-text;
+}
+
+// submit button
+.section-two--button {
+    background: $primary-yellow;
+    margin-top: 30px;
+    &:hover {
+        animation-duration: 0.4s; 
+        animation-name: swing; 
+        color: $primary-green;
+    }
+    &:active {
+    box-shadow: 1px 1px 5px 0 #000000;
+    top: 4px;
+    left: 4px;
+    } 
+}   
+
+.making-space {
+    margin-bottom: 30px;
+}
+
+// media queries
+
+@media (max-width: 830px) {
+    .section-two--specifics {
+    h3 {
+        @include font-size-value(38);
+        }  
+    }   
+    .section-two--button {
+        margin-bottom: 30px;
+    } 
+}
