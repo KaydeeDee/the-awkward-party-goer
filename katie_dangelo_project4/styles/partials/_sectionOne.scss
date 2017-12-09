@@ -9,7 +9,7 @@ nav {
 }
 
 nav a {
-    margin-top: 35px;
+    margin-top: 3vh;
     transition: 0.3s;
     &:hover {
         color: $primary-purple;
@@ -25,15 +25,14 @@ nav a {
 }
 
 .section-one--specifics {
-    margin-top: 20px;
-    margin-bottom: 35px;
+    vertical-align: top;
 }
 
 h1 {
     @include font-size-value(70);
     margin-bottom: 0;
+    margin-top: 2vh;
     font-family: $header-text;
-    margin-top: 7vh;
     letter-spacing: 2.5px;
 }
 
@@ -47,8 +46,8 @@ h2 {
 .section-one--main-wording {
     @include font-size-value(25);
     border-radius: 5px;
-    max-width: 780px;
-    margin: 5vh auto;
+    max-width: 800px;
+    margin: 2vh auto;
     color: $primary-color; 
     font-family: $paragraph-text;
     p {
@@ -69,7 +68,7 @@ h2 {
     border: 1px solid $primary-purple;
     background: $primary-purple;
     margin-top: 2vh;
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
     &:hover {
         color: $primary-yellow;
     }
@@ -97,7 +96,7 @@ h2 {
 }
 
 .section-one--footer-stick {
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 70px);
 }
 
 // media queries
@@ -116,7 +115,6 @@ h2 {
         max-width: 700px;
     h1 {
         @include font-size-value(55);
-        margin-top: 3vh;
     }
     h2 {
          @include font-size-value(30);
@@ -125,17 +123,23 @@ h2 {
         @include font-size-value(23);
     }
     .section-one--main-wording {
-        max-width: 550px;
+        max-width: 700px;
     }
+    }
+    .made-by-katie {
+        @include font-size-value(10);
+        &:hover {
+            @include font-size-value(11);  
+        }
  }
 }
+
 
 @media (max-width: 695px) {
     .section-one--specifics {
          max-width: 550px;
     h1 {
         @include font-size-value(45);
-        margin-top: 2vh;
     }
     h2 {
         @include font-size-value(28);

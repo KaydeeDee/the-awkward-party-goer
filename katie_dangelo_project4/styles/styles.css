@@ -257,7 +257,7 @@ nav {
   font-size: 1.8rem; }
 
 nav a {
-  margin-top: 35px;
+  margin-top: 3vh;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s; }
@@ -271,15 +271,14 @@ nav a {
   margin-right: 8px; }
 
 .section-one--specifics {
-  margin-top: 20px;
-  margin-bottom: 35px; }
+  vertical-align: top; }
 
 h1 {
   font-size: 70px;
   font-size: 7rem;
   margin-bottom: 0;
+  margin-top: 2vh;
   font-family: "Fredoka One", cursive;
-  margin-top: 7vh;
   letter-spacing: 2.5px; }
 
 h2 {
@@ -293,8 +292,8 @@ h2 {
   font-size: 25px;
   font-size: 2.5rem;
   border-radius: 5px;
-  max-width: 780px;
-  margin: 5vh auto;
+  max-width: 800px;
+  margin: 2vh auto;
   color: #221e1e;
   font-family: "Raleway", sans-serif; }
   .section-one--main-wording p {
@@ -312,7 +311,7 @@ h2 {
   border: 1px solid #e6748d;
   background: #e6748d;
   margin-top: 2vh;
-  margin-bottom: 20px; }
+  margin-bottom: 2vh; }
   .section-one--button:hover {
     color: #eaf6f6; }
   .section-one--button:active {
@@ -339,7 +338,7 @@ h2 {
     font-size: 1.8rem; }
 
 .section-one--footer-stick {
-  min-height: calc(100vh - 100px); }
+  min-height: calc(100vh - 70px); }
 
 @media (max-width: 1130px) {
   .stick-to-bottom--anchor {
@@ -352,8 +351,7 @@ h2 {
     max-width: 700px; }
     .section-one--specifics h1 {
       font-size: 55px;
-      font-size: 5.5rem;
-      margin-top: 3vh; }
+      font-size: 5.5rem; }
     .section-one--specifics h2 {
       font-size: 30px;
       font-size: 3rem; }
@@ -361,15 +359,20 @@ h2 {
       font-size: 23px;
       font-size: 2.3rem; }
     .section-one--specifics .section-one--main-wording {
-      max-width: 550px; } }
+      max-width: 700px; }
+  .made-by-katie {
+    font-size: 10px;
+    font-size: 1rem; }
+    .made-by-katie:hover {
+      font-size: 11px;
+      font-size: 1.1rem; } }
 
 @media (max-width: 695px) {
   .section-one--specifics {
     max-width: 550px; }
     .section-one--specifics h1 {
       font-size: 45px;
-      font-size: 4.5rem;
-      margin-top: 2vh; }
+      font-size: 4.5rem; }
     .section-one--specifics h2 {
       font-size: 28px;
       font-size: 2.8rem; }
@@ -399,7 +402,7 @@ h2 {
   background-image: linear-gradient(to right, rgba(230, 116, 141, 0.85), rgba(230, 116, 141, 0.85)), url("../images/background-party.png"); }
 
 .section-two--section--text {
-  margin-top: 7vh; }
+  margin-top: 1vh; }
 
 form {
   max-width: 750px;
@@ -414,7 +417,7 @@ form {
   font-weight: 600;
   border: none;
   padding: 15px;
-  margin: 10px 5px;
+  margin: 1vh 0.5vh;
   display: inline-block; }
   .section-two--specifics input:hover, .section-two--specifics label:hover {
     background: #66bfbf; }
@@ -441,7 +444,7 @@ h3 {
 
 .section-two--button {
   background: #eaf6f6;
-  margin-top: 30px; }
+  margin-top: 3.5vh; }
   .section-two--button:hover {
     -webkit-animation-duration: 0.4s;
     animation-duration: 0.4s;
@@ -455,13 +458,13 @@ h3 {
     left: 4px; }
 
 .making-space {
-  margin-top: 2.5vh;
-  margin-bottom: 30px; }
+  margin-top: 1.5vh;
+  margin-bottom: 1vh; }
 
 @media (max-width: 830px) {
   .section-two--specifics h3 {
-    font-size: 38px;
-    font-size: 3.8rem; }
+    font-size: 30px;
+    font-size: 3rem; }
   .section-two--button {
     margin-bottom: 30px; } }
 
@@ -469,13 +472,14 @@ h3 {
   display: none; }
 
 .footer-stick-to-bottom--wrapper {
-  min-height: calc(100vh - 95px); }
+  min-height: calc(100vh - 60px); }
 
 .section-three--background {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(234, 246, 246, 0.8)), to(rgba(234, 246, 246, 0.8))), url("../images/background-party.png");
   background-image: -webkit-linear-gradient(left, rgba(234, 246, 246, 0.8), rgba(234, 246, 246, 0.8)), url("../images/background-party.png");
   background-image: -o-linear-gradient(left, rgba(234, 246, 246, 0.8), rgba(234, 246, 246, 0.8)), url("../images/background-party.png");
-  background-image: linear-gradient(to right, rgba(234, 246, 246, 0.8), rgba(234, 246, 246, 0.8)), url("../images/background-party.png"); }
+  background-image: linear-gradient(to right, rgba(234, 246, 246, 0.8), rgba(234, 246, 246, 0.8)), url("../images/background-party.png");
+  padding: 1px; }
 
 .section-three--specifics {
   display: -webkit-box;
@@ -485,19 +489,18 @@ h3 {
   text-align: center;
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
-  margin-bottom: 4vh; }
+  justify-content: space-around; }
 
 .section--three-headers {
-  margin-top: 3vh;
-  margin-bottom: 3vh; }
+  margin-top: 1vh;
+  margin-bottom: 2vh; }
 
 .section-three--background h1, .section-three--background h2, .section-three--background h3 {
   text-align: center; }
 
 .section-three--background h1, .section-three--background h2 {
   margin-bottom: 0;
-  margin-top: 5px; }
+  margin-top: 0.3vh; }
 
 .section-three--background h1 {
   font-size: 60px;
@@ -519,7 +522,7 @@ h3 {
   font-size: 18px;
   font-size: 1.8rem; }
   .section-three--socials a {
-    margin-top: 35px;
+    margin-top: 3vh;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
@@ -533,8 +536,8 @@ h4 {
 .section-three--boxes-for-results {
   min-height: 250px;
   padding: 15px;
-  margin-top: 2vh;
-  margin-bottom: 3vh; }
+  margin-top: 0;
+  margin-bottom: 1vh; }
 
 .section-three--boxes-for-results-left {
   max-width: 860px;
@@ -613,7 +616,7 @@ h4 {
   background: #66bfbf;
   color: #221e1e;
   text-align: center;
-  margin-bottom: 10px; }
+  margin-bottom: 1vh; }
   .another-please--button:hover, .section-three--anchor:hover {
     -webkit-animation-duration: 0.4s;
     animation-duration: 0.4s;
@@ -632,7 +635,8 @@ h4 {
 .ending-header h3 {
   font-size: 30px;
   font-size: 3rem;
-  margin-bottom: 30px; }
+  margin-top: 0;
+  margin-bottom: 2vh; }
 
 footer {
   display: -webkit-box;
@@ -642,10 +646,10 @@ footer {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-bottom: 15px; }
+  justify-content: flex-start; }
   footer p {
-    display: inline-block; }
+    display: inline-block;
+    margin: 0; }
   footer img {
     position: relative;
     top: 5px; }
@@ -656,7 +660,9 @@ footer {
     font-size: 5rem; }
   .section-three--background h2 {
     font-size: 20px;
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .section-three--specifics {
+    max-width: 700px; } }
 
 @media (max-width: 630px) {
   .section-three--background h1 {
@@ -685,7 +691,9 @@ footer {
     min-height: 150px; }
   .nyt-result, .lcbo-result {
     margin-top: 0;
-    padding: 5px; } }
+    padding: 5px; }
+  footer img {
+    width: 15%; } }
 
 @media (max-width: 540px) {
   .section-three--background h3 {

@@ -7,7 +7,7 @@
 }
 
 .section-two--section--text  {
-    margin-top: 7vh;
+    margin-top: 1vh;
 }
 // forms
 
@@ -25,7 +25,7 @@ form {
         font-weight: 600;
         border: none;
         padding: 15px;
-        margin: 10px 5px;
+        margin: 1vh 0.5vh;
         display: inline-block;
         &:hover {
             background: $primary-green;
@@ -59,7 +59,7 @@ h3 {
 // submit button
 .section-two--button {
     background: $primary-yellow;
-    margin-top: 30px;
+    margin-top: 3.5vh;
     &:hover {
         animation-duration: 0.4s; 
         animation-name: swing; 
@@ -73,8 +73,8 @@ h3 {
 }   
 
 .making-space {
-    margin-top: 2.5vh;
-    margin-bottom: 30px;
+    margin-top: 1.5vh;
+    margin-bottom: 1vh;
 }
 
 // media queries
@@ -82,7 +82,7 @@ h3 {
 @media (max-width: 830px) {
     .section-two--specifics {
     h3 {
-        @include font-size-value(38);
+        @include font-size-value(30);
         }  
     }   
     .section-two--button {
