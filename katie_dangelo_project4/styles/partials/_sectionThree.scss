@@ -3,17 +3,23 @@
 }
 
 .footer-stick-to-bottom--wrapper {
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - 95px);
 }
 
 .section-three--background {
-    background-image: linear-gradient(to right,rgba(170, 155, 57, 0.8), rgba(170, 155, 57, 0.8)), url('../images/background-party.png');
+    background-image: linear-gradient(to right,rgba($primary-yellow, 0.85), rgba($primary-yellow, 0.85)), url('../images/background-party.png');
 }
 
 .section-three--specifics {
     display: flex;
     text-align: center;
     justify-content: space-around;
+    margin-bottom: 4vh;
+}
+
+.section--three-headers {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
 .section-three--background {
@@ -52,8 +58,8 @@ h4 {
 .section-three--boxes-for-results {
     min-height: 250px;
     padding: 15px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
 }
 
 .section-three--boxes-for-results-left {
@@ -113,7 +119,7 @@ h4 {
 
 .results--background, .lcbo-result {
     a, h4{
-     transition: 0.3s;   
+        transition: 0.3s;   
     }
     a:hover {
         color: $primary-green;

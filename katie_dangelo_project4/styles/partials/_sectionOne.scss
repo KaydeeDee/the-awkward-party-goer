@@ -1,5 +1,5 @@
 .section-one--background {
-    background-image: linear-gradient(to right,rgba(43, 128, 62, 0.8), rgba(43, 128, 62, 0.8)), url('../images/background-party.png');
+    background-image: linear-gradient(to right rgba($primary-green, 0.85), rgba($primary-green, 0.85)), url('../images/background-party.png');
 }   
 
 nav {
@@ -33,43 +33,43 @@ h1 {
     @include font-size-value(70);
     margin-bottom: 0;
     font-family: $header-text;
-    margin-top: 10px;;
+    margin-top: 4vh;
+    letter-spacing: 2.5px;
 }
 
 h2 {
     @include font-size-value(30); 
     margin-top: 0;
     font-family: $paragraph-text;
+    letter-spacing: 1.5px;
 }
 
 .section-one--main-wording {
     @include font-size-value(25);
     border-radius: 5px;
-    padding: 20px;
+    max-width: 780px;
+    margin: 5vh auto;
     color: $primary-color; 
-    margin-top: 40px;
+    font-family: $paragraph-text;
     p {
         margin: 0;
-        font-weight: 500;
+        font-weight: 400;
+        font-family: $paragraph-text;
+        line-height: 32px;
     }
 }
 
 .section-one--main-wording .section-one--middle-p {
-    margin-top: 20px;
+    margin: 25px 0;
     font-weight: 600;
     font-style: italic;
-}
-
-.section-one--middle-p {
-    margin-bottom: 20px;
-
 }
 
 .section-one--button {
     border: 1px solid $primary-purple;
     background: $primary-purple;
-    margin-top: 20px;
-    margin-bottom: 98px;
+    margin-top: 2vh;
+    margin-bottom: 20px;
     &:hover {
         color: $primary-yellow;
     }
@@ -81,9 +81,8 @@ h2 {
 }
 
 .stick-to-bottom--anchor {
-    display: flex;
-    flex-direction: row;
     display: block;
+    margin-bottom: 20px;
 }
 
 .made-by-katie {
@@ -97,19 +96,19 @@ h2 {
     }
 }
 
+.section-one--footer-stick {
+    min-height: calc(100vh - 100px);
+}
+
 // media queries
 
 @media (max-width: 1130px) {
     .stick-to-bottom--anchor {
-        margin-bottom: 30px;
-        text-align: center;
-    }
-    .section-one--button {
-        margin-bottom: 10px;
+        margin-left: 20px;
     }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 822px) {
     .section-one--specifics {
     h1 {
         @include font-size-value(55);
@@ -119,6 +118,26 @@ h2 {
     }
      p {
         @include font-size-value(23);
+    }
+    .section-one--main-wording {
+        max-width: 550px;
+    }
+ }
+}
+
+@media (max-width: 695px) {
+    .section-one--specifics {
+    h1 {
+        @include font-size-value(45);
+    }
+    h2 {
+        @include font-size-value(28);
+    }
+     p {
+        @include font-size-value(22);
+    }
+    .section-one--main-wording {
+        max-width: 550px;
     }
  }
 }

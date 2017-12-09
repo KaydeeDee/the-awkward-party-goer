@@ -3,11 +3,19 @@
 }
 
 .section-two--background {
-    background-image: linear-gradient(to right,rgba(65, 48, 117, 0.8), rgba(65, 48, 117, 0.8)), url('../images/background-party.png');
+    background-image: linear-gradient(to right,rgba($primary-purple, 0.85), rgba($primary-purple, 0.85)), url('../images/background-party.png');
 }
 
-
+.section--text {
+    margin-top: 7vh;
+}
 // forms
+
+form {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
 .section-two--specifics {
     input, label {
         color: $primary-color;
@@ -39,12 +47,13 @@ input[type="radio"]{
 }
 
 .section-two--specifics input[type="radio"]:checked + label {
-  background: $primary-yellow;
+  background: $primary-green;
 }
 
 h3 {
     @include font-size-value(45);
     font-family: $header-text;
+    letter-spacing: 1.7px;
 }
 
 // submit button
@@ -64,6 +73,7 @@ h3 {
 }   
 
 .making-space {
+    margin-top: 2.5vh;
     margin-bottom: 30px;
 }
 

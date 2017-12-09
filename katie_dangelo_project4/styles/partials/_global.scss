@@ -1,10 +1,10 @@
 // variables
 
 $primary-color: rgb(34, 30, 30);
-$primary-white: rgb(255, 255, 255);
-$primary-purple: rgb(68, 58, 99);
-$primary-yellow: rgb(187, 169, 56);
-$primary-green: rgb(43, 128, 62);
+$primary-white: rgb(252,254,254);
+$primary-purple: rgb(230,116,141);
+$primary-yellow: rgb(234,246,246);
+$primary-green: rgb(102,191,191);
 
 $header-text: 'Fredoka One', cursive;
 $paragraph-text: 'Raleway', sans-serif;
@@ -18,8 +18,8 @@ $paragraph-text: 'Raleway', sans-serif;
 
 // wrappers
 .wrapper--max {
-     max-width: 1900px;
-     margin: 0 auto;
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 .wrapper--inner {
