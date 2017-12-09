@@ -137,7 +137,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   margin: 0 auto; }
 
 .wrapper--inner {
-  max-width: 1000px;
+  max-width: 1050px;
   margin: 0 auto; }
 
 .wrapper--footer-nav {
@@ -279,7 +279,7 @@ h1 {
   font-size: 7rem;
   margin-bottom: 0;
   font-family: "Fredoka One", cursive;
-  margin-top: 4vh;
+  margin-top: 7vh;
   letter-spacing: 2.5px; }
 
 h2 {
@@ -343,37 +343,50 @@ h2 {
 
 @media (max-width: 1130px) {
   .stick-to-bottom--anchor {
-    margin-left: 20px; } }
+    margin-left: 20px; }
+  h1 {
+    margin-top: 0vh; } }
 
 @media (max-width: 822px) {
-  .section-one--specifics h1 {
-    font-size: 55px;
-    font-size: 5.5rem; }
-  .section-one--specifics h2 {
-    font-size: 30px;
-    font-size: 3rem; }
-  .section-one--specifics p {
-    font-size: 23px;
-    font-size: 2.3rem; }
-  .section-one--specifics .section-one--main-wording {
-    max-width: 550px; } }
+  .section-one--specifics {
+    max-width: 700px; }
+    .section-one--specifics h1 {
+      font-size: 55px;
+      font-size: 5.5rem;
+      margin-top: 3vh; }
+    .section-one--specifics h2 {
+      font-size: 30px;
+      font-size: 3rem; }
+    .section-one--specifics p {
+      font-size: 23px;
+      font-size: 2.3rem; }
+    .section-one--specifics .section-one--main-wording {
+      max-width: 550px; } }
 
 @media (max-width: 695px) {
-  .section-one--specifics h1 {
-    font-size: 45px;
-    font-size: 4.5rem; }
-  .section-one--specifics h2 {
-    font-size: 28px;
-    font-size: 2.8rem; }
-  .section-one--specifics p {
-    font-size: 22px;
-    font-size: 2.2rem; }
-  .section-one--specifics .section-one--main-wording {
-    max-width: 550px; } }
+  .section-one--specifics {
+    max-width: 550px; }
+    .section-one--specifics h1 {
+      font-size: 45px;
+      font-size: 4.5rem;
+      margin-top: 2vh; }
+    .section-one--specifics h2 {
+      font-size: 28px;
+      font-size: 2.8rem; }
+    .section-one--specifics p {
+      font-size: 20px;
+      font-size: 2rem; }
+    .section-one--specifics .section-one--main-wording {
+      max-width: 550px; } }
+
+@media (max-width: 550px) {
+  .section-one--specifics, .section-two--specifics, .footer-stick-to-bottom--wrapper {
+    max-width: 400px;
+    margin: 0 auto; } }
 
 @media (max-width: 400px) {
   .section-one--specifics, .section-two--specifics, .footer-stick-to-bottom--wrapper {
-    max-width: 370px;
+    max-width: 350px;
     margin: 0 auto; } }
 
 .section-two--dis {
@@ -385,7 +398,7 @@ h2 {
   background-image: -o-linear-gradient(left, rgba(230, 116, 141, 0.85), rgba(230, 116, 141, 0.85)), url("../images/background-party.png");
   background-image: linear-gradient(to right, rgba(230, 116, 141, 0.85), rgba(230, 116, 141, 0.85)), url("../images/background-party.png"); }
 
-.section--text {
+.section-two--section--text {
   margin-top: 7vh; }
 
 form {
@@ -397,14 +410,14 @@ form {
   font-size: 20px;
   font-size: 2rem;
   font-family: "Raleway", sans-serif;
-  background: #fcfefe;
+  background: #eaf6f6;
   font-weight: 600;
   border: none;
   padding: 15px;
   margin: 10px 5px;
   display: inline-block; }
   .section-two--specifics input:hover, .section-two--specifics label:hover {
-    background: #eaf6f6; }
+    background: #66bfbf; }
   .section-two--specifics input:active, .section-two--specifics label:active {
     -webkit-box-shadow: 1px 1px 5px 0 #000000;
     box-shadow: 1px 1px 5px 0 #000000;
@@ -415,7 +428,7 @@ input[type="radio"] {
   display: none; }
 
 .selected {
-  background: #eaf6f6; }
+  background: #66bfbf; }
 
 .section-two--specifics input[type="radio"]:checked + label {
   background: #66bfbf; }
@@ -459,10 +472,10 @@ h3 {
   min-height: calc(100vh - 95px); }
 
 .section-three--background {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(234, 246, 246, 0.85)), to(rgba(234, 246, 246, 0.85))), url("../images/background-party.png");
-  background-image: -webkit-linear-gradient(left, rgba(234, 246, 246, 0.85), rgba(234, 246, 246, 0.85)), url("../images/background-party.png");
-  background-image: -o-linear-gradient(left, rgba(234, 246, 246, 0.85), rgba(234, 246, 246, 0.85)), url("../images/background-party.png");
-  background-image: linear-gradient(to right, rgba(234, 246, 246, 0.85), rgba(234, 246, 246, 0.85)), url("../images/background-party.png"); }
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(234, 246, 246, 0.8)), to(rgba(234, 246, 246, 0.8))), url("../images/background-party.png");
+  background-image: -webkit-linear-gradient(left, rgba(234, 246, 246, 0.8), rgba(234, 246, 246, 0.8)), url("../images/background-party.png");
+  background-image: -o-linear-gradient(left, rgba(234, 246, 246, 0.8), rgba(234, 246, 246, 0.8)), url("../images/background-party.png");
+  background-image: linear-gradient(to right, rgba(234, 246, 246, 0.8), rgba(234, 246, 246, 0.8)), url("../images/background-party.png"); }
 
 .section-three--specifics {
   display: -webkit-box;
@@ -506,7 +519,7 @@ h3 {
   font-size: 18px;
   font-size: 1.8rem; }
   .section-three--socials a {
-    margin-top: 20px;
+    margin-top: 35px;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
@@ -664,7 +677,8 @@ footer {
     -ms-flex-direction: column;
     flex-direction: column; }
   .section-three--boxes-for-results-left, .section-three--boxes-for-results {
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
   .wrapper--footer-nav {
     text-align: center; }
   .nyt-result {

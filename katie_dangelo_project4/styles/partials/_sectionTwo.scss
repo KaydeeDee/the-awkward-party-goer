@@ -6,7 +6,7 @@
     background-image: linear-gradient(to right,rgba($primary-purple, 0.85), rgba($primary-purple, 0.85)), url('../images/background-party.png');
 }
 
-.section--text {
+.section-two--section--text  {
     margin-top: 7vh;
 }
 // forms
@@ -21,14 +21,14 @@ form {
         color: $primary-color;
         @include font-size-value(20);
         font-family: $paragraph-text;
-        background: $primary-white;
+        background: $primary-yellow;
         font-weight: 600;
         border: none;
         padding: 15px;
         margin: 10px 5px;
         display: inline-block;
         &:hover {
-            background: $primary-yellow;
+            background: $primary-green;
         }
         &:active {
             box-shadow: 1px 1px 5px 0 #000000;
@@ -43,7 +43,7 @@ input[type="radio"]{
 }
 
 .selected {
-  background: $primary-yellow;
+  background: $primary-green;
 }
 
 .section-two--specifics input[type="radio"]:checked + label {

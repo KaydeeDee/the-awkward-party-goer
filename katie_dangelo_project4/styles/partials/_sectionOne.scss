@@ -33,7 +33,7 @@ h1 {
     @include font-size-value(70);
     margin-bottom: 0;
     font-family: $header-text;
-    margin-top: 4vh;
+    margin-top: 7vh;
     letter-spacing: 2.5px;
 }
 
@@ -106,12 +106,17 @@ h2 {
     .stick-to-bottom--anchor {
         margin-left: 20px;
     }
+    h1 {
+        margin-top: 0vh;
+    }
 }
 
 @media (max-width: 822px) {
     .section-one--specifics {
+        max-width: 700px;
     h1 {
         @include font-size-value(55);
+        margin-top: 3vh;
     }
     h2 {
          @include font-size-value(30);
@@ -127,14 +132,16 @@ h2 {
 
 @media (max-width: 695px) {
     .section-one--specifics {
+         max-width: 550px;
     h1 {
         @include font-size-value(45);
+        margin-top: 2vh;
     }
     h2 {
         @include font-size-value(28);
     }
      p {
-        @include font-size-value(22);
+        @include font-size-value(20);
     }
     .section-one--main-wording {
         max-width: 550px;
@@ -142,9 +149,16 @@ h2 {
  }
 }
 
+@media (max-width: 550px) {
+    .section-one--specifics, .section-two--specifics, .footer-stick-to-bottom--wrapper {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 400px) {
     .section-one--specifics, .section-two--specifics, .footer-stick-to-bottom--wrapper {
-        max-width: 370px;
+        max-width: 350px;
         margin: 0 auto;
     }
 }
