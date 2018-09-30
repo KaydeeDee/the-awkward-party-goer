@@ -1,0 +1,156 @@
+// variables
+
+$primary-color: rgb(34, 30, 30);
+$primary-white: rgb(252,254,254);
+$primary-purple: rgb(230,116,141);
+$primary-yellow: rgb(234,246,246);
+$primary-green: rgb(102,191,191);
+
+$header-text: 'Fredoka One', cursive;
+$paragraph-text: 'Raleway', sans-serif;
+
+$transitionThree: all 0.3s ease;
+
+// mixins
+
+@mixin font-size-value($sizeValue){
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+}
+
+// wrappers
+.wrapper--max {
+    max-width: 2500px;
+    margin: 0 auto;
+}
+
+.wrapper--inner {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+// base size
+
+html {
+    font-size: 62.5%;
+}
+
+// stripping 
+h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+// general
+
+.section--text-centering {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+button, label, input {
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: $primary-color; 
+    font-family: $paragraph-text;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+a, p, h1, h2, h3 {
+    color: $primary-color;
+}
+
+h1 {
+    font-family: $header-text;
+    letter-spacing: 2.5px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-family: $paragraph-text;
+    letter-spacing: 1.5px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+
+.matching-anchors--style, .another-please--button {
+    @include font-size-value(25);
+    border-radius: 5px;
+    padding: 15px;
+    font-family: $header-text;
+    text-transform: uppercase;
+}
+
+.shaking-for-buttons:hover,
+.shaking-for-buttons:focus {
+        animation-duration: 0.4s; 
+        animation-name: swing; 
+}
+
+@keyframes swing {
+  20% { transform: rotate(3deg); } 
+        40% { transform: rotate(-2deg); } 
+        60% { transform: rotate(2deg); } 
+        80% { transform: rotate(-2deg); } 
+        100% { transform: rotate(0deg); } 
+}
+
+// nav and footer
+nav, footer {
+    padding: 15px 45px;
+    display: flex;
+    align-items: center;
+}
+
+// nav in both second and third frame
+nav {
+    justify-content: flex-end;
+    @include font-size-value(20); //lives on parent for .fa class inherit
+        ul {
+            display: flex;
+        }
+
+        a {
+            transition: $transitionThree;
+
+                &:hover,
+                &:focus {
+                    color: $primary-purple;
+                }
+        }
+
+        .fa.fa-twitter  {
+            margin-right: 15px;
+        }
+}
+
+// media queries
+
+@media (max-width: 1300px) {
+    // .wrapper--footer-nav {
+    //     max-width: 1000px
+    // }
+}
+
+@media (max-width: 1000px) {
+    // .wrapper--footer-nav {
+    //     justify-content: center;
+    // }
+}

@@ -2,13 +2,10 @@
     display:none;
 }
 
-.footer-stick-to-bottom--wrapper {
-    min-height: calc(100vh - 60px);
-}
-
 .section-three--background {
-    background-image: linear-gradient(to right,rgba($primary-yellow, 0.8), rgba($primary-yellow, 0.8)), url('../images/background-party.png');
+    background-image: linear-gradient(to right,rgba($primary-yellow, 0.8), rgba($primary-yellow, 0.8)), url('./assets/background-party.png');
     padding: 1px;
+    min-height: 100vh;
 }
 
 .section-three--specifics {
@@ -23,31 +20,11 @@
 }
 
 .section-three--background {
-    h1, h2, h3 {
-    text-align: center;
-    }
-    h1, h2 {
-        margin-bottom: 0;
-        margin-top: 0.3vh
-    }
     h1 {
         @include font-size-value(60);
     }
     h2 {
         @include font-size-value(25);
-    }
-}
-
-.section-three--socials {
-    display: flex;
-    justify-content: flex-end;
-     @include font-size-value(18);
-    a {
-        margin-top: 3vh;
-        transition: 0.3s;
-    &:hover {
-        color: $primary-green;
-        }
     }
 }
 
@@ -211,7 +188,7 @@ footer {
         padding: 0;
     } 
     .wrapper--footer-nav {
-        text-align: center;
+        // text-align: center;
     }
     .nyt-result {
         min-height: 150px;

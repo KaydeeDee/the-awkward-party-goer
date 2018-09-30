@@ -3,20 +3,29 @@
 }
 
 .section-two--background {
-    background-image: linear-gradient(to right,rgba($primary-purple, 0.85), rgba($primary-purple, 0.85)), url('../images/background-party.png');
+    background-image: linear-gradient(to right,rgba($primary-purple, 0.85), rgba($primary-purple, 0.85)), url('./assets/background-party.png');
+    padding: 1px;
 }
 
-.section-two--section--text  {
-    margin-top: 1vh;
-}
 // forms
 
-form {
-    max-width: 750px;
-    margin: 0 auto;
-}
 
 .section-two--specifics {
+    min-height: 100vh;
+
+    h1 {
+        @include font-size-value(45);
+    }
+
+    > div {
+        margin: 35px 0;
+    }
+
+    form {
+        margin: 20px auto 0;
+        max-width: 750px;
+    }
+
     input, label {
         color: $primary-color;
         @include font-size-value(20);
@@ -27,14 +36,15 @@ form {
         padding: 15px;
         margin: 1vh 0.5vh;
         display: inline-block;
-        &:hover {
-            background: $primary-green;
-        }
-        &:active {
-            box-shadow: 1px 1px 5px 0 #000000;
-            top: 4px;
-            left: 4px;
-        }
+            &:hover,
+            &:focus {
+                background: $primary-green;
+            }
+            &:active {
+                box-shadow: 1px 1px 5px 0 #000000;
+                top: 4px;
+                left: 4px;
+            }
     }
 }
 
@@ -50,32 +60,19 @@ input[type="radio"]{
   background: $primary-green;
 }
 
-h3 {
-    @include font-size-value(45);
-    font-family: $header-text;
-    letter-spacing: 1.7px;
-}
-
 // submit button
 .section-two--button {
     background: $primary-yellow;
-    margin-top: 3.5vh;
-    &:hover {
+    &:hover,
+    &:focus {
         animation-duration: 0.4s; 
         animation-name: swing; 
         color: $primary-green;
     }
     &:active {
-    box-shadow: 1px 1px 5px 0 #000000;
-    top: 4px;
-    left: 4px;
+        box-shadow: 1px 1px 5px 0 #000000;
     } 
 }   
-
-.making-space {
-    margin-top: 1.5vh;
-    margin-bottom: 1vh;
-}
 
 // media queries
 
@@ -85,7 +82,4 @@ h3 {
         @include font-size-value(30);
         }  
     }   
-    .section-two--button {
-        margin-bottom: 30px;
-    } 
 }
