@@ -79,7 +79,7 @@ appTotal.nytDisplayResults = function(nytResults) {
 
     const nytPeice = nytResults[nytRandumNumber];
     
-    const nytTitle = (`<h4><a href="${nytPeice.url}">${nytPeice.title}</a></h4>`);
+    const nytTitle = (`<h3><a href="${nytPeice.url}">${nytPeice.title}</a></h3>`);
     const nytByline = (`<p class="nytbyline">${nytPeice.byline}</p>`);
     const nytAbstract = (`<p class="final-results--paragraphs">${nytPeice.abstract}</p>`); 
     const nytContainer = $(`<div class="results--background">`).append(nytTitle, nytByline, nytAbstract);
@@ -127,7 +127,7 @@ appTotal.lcboDisplayResults = function (lcboResults) {
 
   // Sending lcbo info to DOM
 
-  const lcboTitle = (`<h4><a href="${lcboWebsite}">${lcboPeice.name}</a></h4>`);
+  const lcboTitle = (`<h3><a href="${lcboWebsite}">${lcboPeice.name}</a></h3>`);
   const lcboPhoto = (`<div class="lcbo-photo--background"><img src="${lcboPeice.image_thumb_url}" alt="${lcboPeice.name}"></div>`);
   const lcboFinalPrice = (`<p class="final-results--paragraphs">Price: $${lcboInDollars}</p>`);
 

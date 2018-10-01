@@ -81,7 +81,7 @@ appTotal.nytDisplayResults = function (nytResults) {
 
   var nytPeice = nytResults[nytRandumNumber];
 
-  var nytTitle = '<h4><a href="' + nytPeice.url + '">' + nytPeice.title + '</a></h4>';
+  var nytTitle = '<h3><a href="' + nytPeice.url + '">' + nytPeice.title + '</a></h3>';
   var nytByline = '<p class="nytbyline">' + nytPeice.byline + '</p>';
   var nytAbstract = '<p class="final-results--paragraphs">' + nytPeice.abstract + '</p>';
   var nytContainer = $('<div class="results--background">').append(nytTitle, nytByline, nytAbstract);
@@ -127,7 +127,7 @@ appTotal.lcboDisplayResults = function (lcboResults) {
 
   // Sending lcbo info to DOM
 
-  var lcboTitle = '<h4><a href="' + lcboWebsite + '">' + lcboPeice.name + '</a></h4>';
+  var lcboTitle = '<h3><a href="' + lcboWebsite + '">' + lcboPeice.name + '</a></h3>';
   var lcboPhoto = '<div class="lcbo-photo--background"><img src="' + lcboPeice.image_thumb_url + '" alt="' + lcboPeice.name + '"></div>';
   var lcboFinalPrice = '<p class="final-results--paragraphs">Price: $' + lcboInDollars + '</p>';
 

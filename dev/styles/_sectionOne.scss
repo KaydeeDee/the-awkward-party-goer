@@ -19,6 +19,7 @@
     @include font-size-value(25);
     max-width: 900px;
     margin: 55px auto 60px;
+    padding: 0 10px;
 }
 
 .section-one--main-wording .section-one--middle-p {
@@ -50,7 +51,7 @@
     
         &:hover,
         &:focus {
-            color: $primary-white;
+            font-style: italic;
         }
     }
 
@@ -58,7 +59,8 @@
 
 @media (max-width: 822px) {
     .section-one--specifics {
-        max-width: 700px;
+    min-height: calc(100vh - 120px);
+    
     h1 {
         @include font-size-value(55);
     }
@@ -69,18 +71,21 @@
         @include font-size-value(23);
     }
     .section-one--main-wording {
-        max-width: 700px;
+         margin: 30px auto 40px;
     }
+
+}
+
+    .section-one--background footer {
+        justify-content: center;
+        margin-top: 20px;
     }
-    .made-by-katie {
-        @include font-size-value(10);
- }
 }
 
 
 @media (max-width: 695px) {
     .section-one--specifics {
-         max-width: 550px;
+        //  max-width: 550px;
     h1 {
         @include font-size-value(45);
     }
@@ -90,9 +95,9 @@
      p {
         @include font-size-value(20);
     }
-    .section-one--main-wording {
-        max-width: 550px;
-    }
+    // .section-one--main-wording {
+    //     max-width: 550px;
+    // }
  }
 }
 
