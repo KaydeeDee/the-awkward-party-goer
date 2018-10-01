@@ -60,7 +60,7 @@
 @media (max-width: 822px) {
     .section-one--specifics {
     min-height: calc(100vh - 120px);
-    
+
     h1 {
         @include font-size-value(55);
     }
@@ -85,7 +85,6 @@
 
 @media (max-width: 695px) {
     .section-one--specifics {
-        //  max-width: 550px;
     h1 {
         @include font-size-value(45);
     }
@@ -95,22 +94,5 @@
      p {
         @include font-size-value(20);
     }
-    // .section-one--main-wording {
-    //     max-width: 550px;
-    // }
  }
 }
-
-// @media (max-width: 550px) {
-//     .section-one--specifics, .section-two--specifics, .footer-stick-to-bottom--wrapper {
-//         max-width: 400px;
-//         margin: 0 auto;
-//     }
-// }
-
-// @media (max-width: 400px) {
-//     .section-one--specifics, .section-two--specifics, .footer-stick-to-bottom--wrapper {
-//         max-width: 350px;
-//         margin: 0 auto;
-//     }
-// }
